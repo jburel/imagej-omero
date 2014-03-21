@@ -51,6 +51,8 @@ If you wish to give it a test drive, the steps are:
 
 *   Download the [Jython launch script](bin/jython) and place in the same
     folder as the `jython-standalone` JAR file. Add this folder to your `PATH`.
+    Make sure that the file is an executable if not modify its permissions i.e.
+    `chmod +x bin/jython`.
 
 ### Set up ImageJ2
 
