@@ -28,7 +28,7 @@ import imagej.data.DatasetService;
 import imagej.data.display.DatasetView;
 import imagej.data.display.ImageDisplay;
 import imagej.data.display.ImageDisplayService;
-import imagej.display.DisplayService;
+import org.scijava.display.DisplayService;
 
 import java.io.File;
 import java.io.IOException;

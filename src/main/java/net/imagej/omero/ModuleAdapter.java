@@ -23,7 +23,7 @@
 
 package net.imagej.omero;
 
-import imagej.command.Command;
+import org.scijava.command.Command;
 import imagej.data.Dataset;
 import imagej.data.display.DatasetView;
 import imagej.data.display.ImageDisplay;

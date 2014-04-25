@@ -23,7 +23,7 @@
 
 package net.imagej.omero;
 
-import imagej.command.ContextCommand;
+import org.scijava.command.ContextCommand;
 
 import org.scijava.plugin.Parameter;
 

@@ -23,10 +23,10 @@
 
 package net.imagej.omero;
 
-import imagej.command.Command;
+import org.scijava.command.Command;
 import imagej.data.Dataset;
 import imagej.data.DatasetService;
-import imagej.menu.MenuConstants;
+import org.scijava.menu.MenuConstants;
 
 import java.io.File;
 import java.io.IOException;
