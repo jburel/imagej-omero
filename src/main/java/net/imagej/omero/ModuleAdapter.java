@@ -27,11 +27,6 @@ import imagej.command.Command;
 import imagej.data.Dataset;
 import imagej.data.display.DatasetView;
 import imagej.data.display.ImageDisplay;
-import imagej.module.Module;
-import imagej.module.ModuleException;
-import imagej.module.ModuleInfo;
-import imagej.module.ModuleItem;
-import imagej.module.ModuleService;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -42,6 +37,11 @@ import org.scijava.AbstractContextual;
 import org.scijava.Context;
 import org.scijava.ItemVisibility;
 import org.scijava.log.LogService;
+import org.scijava.module.Module;
+import org.scijava.module.ModuleException;
+import org.scijava.module.ModuleInfo;
+import org.scijava.module.ModuleItem;
+import org.scijava.module.ModuleService;
 import org.scijava.plugin.Parameter;
 import org.scijava.util.Manifest;
 

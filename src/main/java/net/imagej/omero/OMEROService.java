@@ -26,10 +26,10 @@ package net.imagej.omero;
 import imagej.data.Dataset;
 import imagej.data.display.DatasetView;
 import imagej.data.display.ImageDisplay;
-import imagej.module.ModuleItem;
 
 import java.io.IOException;
 
+import org.scijava.module.ModuleItem;
 import org.scijava.service.Service;
 
 /**

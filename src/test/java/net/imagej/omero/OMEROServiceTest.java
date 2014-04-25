@@ -28,8 +28,6 @@ import imagej.ImageJ;
 import imagej.data.Dataset;
 import imagej.data.display.DatasetView;
 import imagej.data.display.ImageDisplay;
-import imagej.module.AbstractModuleItem;
-import imagej.module.ModuleItem;
 import imagej.util.ColorRGB;
 import imagej.util.MersenneTwisterFast;
 
@@ -57,6 +55,8 @@ import omero.RType;
 import omero.grid.Param;
 
 import org.junit.Test;
+import org.scijava.module.AbstractModuleItem;
+import org.scijava.module.ModuleItem;
 
 /**
  * Tests {@link DefaultOMEROService}.
@@ -65,7 +65,7 @@ import org.junit.Test;
  */
 public class OMEROServiceTest {
 
-	/** Tests {@link OMEROService#getJobParam(imagej.module.ModuleItem)}. */
+	/** Tests {@link OMEROService#getJobParam(org.scijava.module.ModuleItem)}. */
 	@Test
 	public void testGetJobParam() {
 		final OMEROService omeroService = createService();

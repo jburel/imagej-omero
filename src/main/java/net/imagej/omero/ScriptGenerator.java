@@ -23,10 +23,7 @@
 
 package net.imagej.omero;
 
-import imagej.Identifiable;
 import imagej.ImageJ;
-import imagej.module.Module;
-import imagej.module.ModuleInfo;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -36,9 +33,13 @@ import java.util.Date;
 
 import org.scijava.AbstractContextual;
 import org.scijava.Context;
+import org.scijava.Identifiable;
 import org.scijava.MenuEntry;
 import org.scijava.MenuPath;
 import org.scijava.UIDetails;
+import org.scijava.module.Module;
+import org.scijava.module.ModuleInfo;
+import org.scijava.module.ModuleService;
 
 /**
  * Generates Jython stubs for running ImageJ {@link Module}s as OMERO scripts.
@@ -77,7 +78,7 @@ public class ScriptGenerator extends AbstractContextual {
 		if (!dir.isDirectory()) {
 			throw new IllegalArgumentException("Invalid directory: " + dir);
 		}
-		for (final ModuleInfo info : ij.module().getModules()) {
+		for (final ModuleInfo info : ij.get(ModuleService.class).getModules()) {
 			if (isValid(info, headlessOnly)) generate(info, dir);
 		}
 	}

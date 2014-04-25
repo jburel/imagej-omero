@@ -29,7 +29,6 @@ import imagej.data.display.DatasetView;
 import imagej.data.display.ImageDisplay;
 import imagej.data.display.ImageDisplayService;
 import imagej.display.DisplayService;
-import imagej.module.ModuleItem;
 
 import java.io.File;
 import java.io.IOException;
@@ -46,6 +45,7 @@ import java.util.Set;
 
 import org.scijava.Optional;
 import org.scijava.log.LogService;
+import org.scijava.module.ModuleItem;
 import org.scijava.object.ObjectService;
 import org.scijava.plugin.Parameter;
 import org.scijava.plugin.Plugin;

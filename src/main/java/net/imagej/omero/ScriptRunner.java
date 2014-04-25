@@ -24,13 +24,13 @@
 package net.imagej.omero;
 
 import imagej.ImageJ;
-import imagej.module.Module;
-import imagej.module.ModuleInfo;
 
 import java.util.Date;
 
 import org.scijava.AbstractContextual;
 import org.scijava.Context;
+import org.scijava.module.ModuleInfo;
+import org.scijava.module.ModuleService;
 
 /**
  * Executes ImageJ {@link Module}s as OMERO scripts.
@@ -70,7 +70,7 @@ public class ScriptRunner extends AbstractContextual {
 	/** Invokes the given ImageJ module identifier as an OMERO script. */
 	public boolean invoke(final String id) {
 		// look for a module matching the given identifier
-		final ModuleInfo info = ModuleUtils.findModule(ij.module(), id);
+		final ModuleInfo info = ModuleUtils.findModule(ij.get(ModuleService.class), id);
 		return invoke(info);
 	}
 
