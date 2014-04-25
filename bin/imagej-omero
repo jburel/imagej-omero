@@ -62,7 +62,7 @@ download "SciJava SLF4J logging" \
 
 # -- Replace SCIFIO with development version --
 
-SCIFIO="scifio-0.10.3-SNAPSHOT.jar"
+SCIFIO="scifio-0.11.1-SNAPSHOT.jar"
 
 rm "$IJ_DIR/jars/scifio-"[0-9]*.jar
 download "$SCIFIO" \
@@ -71,8 +71,8 @@ download "$SCIFIO" \
 
 # -- Download and install ImageJ-OMERO --
 
-IJ_OMERO="ij-omero-0.1.0-SNAPSHOT.jar"
-SCIFIO_OMERO="scifio-omero-0.3.0-SNAPSHOT.jar"
+IJ_OMERO="imagej-omero-0.1.0-SNAPSHOT.jar"
+SCIFIO_OMERO="scifio-omero-0.3.1-SNAPSHOT.jar"
 
 download "$IJ_OMERO" \
 	"$JENKINS/ImageJ-OMERO/$A/target/$IJ_OMERO" \
